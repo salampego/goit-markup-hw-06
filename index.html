@@ -636,12 +636,47 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="backdrop-icon-flex" data-modal-close>
+        <div class="backdrop-icon-flex">
           <button class="btn-modal">
-            <svg class="backdrop-icon">
+            <svg class="backdrop-icon" data-modal-close>
               <use href="./images/close_backdrop.svg#icon-close"></use>
             </svg>
           </button>
+          <div class="modal-form">
+            <h2 class="heading-modal">
+              Оставьте свои данные, мы вам перезвоним
+            </h2>
+            <form action="" class="form-modal-input">
+              <div class="input-container-modal">
+                <label for="name" class="heading-modal-form">Имя</label>
+                <input type="name" id="name" class="input-modal-form" />
+
+                <label for="tel" class="heading-modal-form">Телефон</label>
+                <input type="name" id="tel" class="input-modal-form" />
+
+                <label for="email" class="heading-modal-form">Почта</label>
+                <input type="name" id="email" class="input-modal-form" />
+
+                <label for="comment" class="heading-modal-form"
+                  >Комментарий</label
+                >
+                <textarea
+                  name=""
+                  id="comment"
+                  placeholder="Введите текст"
+                  class="comment-modal-form"
+                ></textarea>
+                <input type="checkbox" name="" id="" />
+                <p>
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href="">Условия договора</a>
+                </p>
+                <button type="submit" class="btn-modal-submit">
+                  Отправить
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
