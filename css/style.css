@@ -286,23 +286,20 @@ ul {
   fill: var(--accent-color);
 }
 .modal {
+  padding: 40px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
-  width: 528px;
-  height: 581px;
+  min-width: 528px;
+  min-height: 581px;
   background: var(--fill-social-footer);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop-icon-flex {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
+
 .btn-modal {
   display: flex;
   align-items: center;
@@ -325,11 +322,7 @@ ul {
   color: var(--logo-header);
 }
 .modal-form {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 40px;
-  right: 41px;
+  padding: 40px;
 }
 .form-modal-input {
   margin-top: 12px;
@@ -355,6 +348,7 @@ ul {
 }
 .form-icon-position {
   position: relative;
+  margin-bottom: 10px;
 }
 .input-modal-form {
   padding-left: 42px;
@@ -400,7 +394,6 @@ ul {
 }
 .comment-modal-form {
   margin-bottom: 20px;
-  margin-top: 4px;
   padding-left: 16px;
   padding-top: 12px;
   resize: none;
@@ -433,6 +426,8 @@ ul {
   margin: -1px;
 }
 .icon-checkbox-modal {
+  background-size: cover;
+  background-position: 50% 50%;
   display: inline-block;
   border: 2px solid var(--header-nav);
   border-radius: 2px;
@@ -715,6 +710,7 @@ ul {
   color: var(--accent-color);
 }
 .footer-address {
+  flex-grow: 1;
   margin-right: 70px;
 }
 .footer-address-link {
