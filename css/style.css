@@ -367,12 +367,15 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field:focus-within .input-modal-form {
-  border-color: var(--accent-color);
-}
 
 .input-modal-form:focus + .icon-input-modal {
   fill: var(--accent-color);
+}
+.input-modal-form:focus-within {
+  border-color: var(--accent-color);
+}
+.comment-modal-form:focus-within {
+  border-color: var(--accent-color);
 }
 .contract-modal {
   display: flex;
@@ -403,9 +406,7 @@ ul {
   border-radius: 4px;
   outline: none;
 }
-.form-field:focus-within .comment-modal-form {
-  border-color: var(--accent-color);
-}
+
 .comment-modal-form::placeholder {
   font-size: 14px;
   line-height: 1.14;
@@ -439,6 +440,8 @@ ul {
 .modal-checkbox:checked + .icon-checkbox-modal {
   background-image: url(../images/check.svg);
   background-color: var(--accent-color);
+  background-size: cover;
+  background-position: 50% 50%;
   border-radius: 2px;
   border-color: transparent;
   margin-right: 7px;
